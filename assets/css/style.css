@@ -1,0 +1,33 @@
+/* fuentes */
+
+.roboto-light1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-medium{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* estilos personalizados */
+
+
+body{
+    margin: 0px !important;
+    font-family: "Roboto", sans-serif;
+    color: aliceblue !important;
+}
+
+.cuerpo{
+    background-color: black;
+}
+
