@@ -4,3 +4,7 @@ const navbar = document.querySelector('.navbar')
         navbar.classList.toggle('active', window.scrollY >8)
     })
 
+
+document.getElementById('boton1').onclick = function(){
+    alert('Su información ha sido entregada.');
+    }   
