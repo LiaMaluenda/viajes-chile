@@ -32,6 +32,10 @@ body{
 }
 
 
+.navbar{
+    scroll-behavior: smooth;
+}
+
 
 .navbar.active{
     background-color: #000;
