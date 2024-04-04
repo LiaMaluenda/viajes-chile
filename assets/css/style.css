@@ -23,11 +23,20 @@
 
 body{
     margin: 0px !important;
-    font-family: "Roboto", sans-serif;
-    color: aliceblue !important;
+    font-family: "Roboto", sans-serif !important;
+    color: white !important;
 }
 
 .cuerpo{
     background-color: black;
 }
 
+
+
+.navbar.active{
+    background-color: #000;
+}
+
+.size-1{
+    font-size: 30px;
+}

@@ -21,16 +21,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bgblack fixed-top">
+    <nav class="navbar navbar-expand-lg  navbar-black fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand  text-white" href="#"><img src="assets\img\viajes.svg" width="50px"
+            <a class="navbar-brand  text-white" href="#"><img src="assets\img\viajes.svg" width="20px"
                     alt="icon-viajes-chile">Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll" style="--bs-scroll-height: 100px">
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
                     </li>
@@ -51,16 +51,16 @@
         <div class="container-fluid p-0">
             <div class="row">
                 <div class="col-12">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div id="#myCarousel" class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="assets\img\carousel1.jpg" class="d-block img-fluid" alt="...">
+                                <img src="assets\img\carousel1.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets\img\carousel2.jpg" class="d-block img-fluid" alt="...">
+                                <img src="assets\img\carousel2.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets\img\carousel3.jpg" class="d-block img-fluid" alt="...">
+                                <img src="assets\img\carousel3.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -142,13 +142,13 @@
         <section id="#destacados">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center p-3 py-5 text-white roboto-medium">
+                    <div class="col-12 text-center p-5 py-5 text-white roboto-medium">
                         <h2>DESTACADOS</h2>
                     </div>
-                    <div class="col-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-12 col-lg-3 p-3">
+                        <div class="card h-100" style="width: 18rem;">
                             <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body text-bg-info text-white">
                                 <h5 class="card-title roboto-medium">Lorem ipsum dolor sit amet</h5>
                                 <p class="card-text roboto-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -159,10 +159,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-12 col-lg-3 p-3">
+                        <div class="card h-100" style="width: 18rem;">
                             <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body text-bg-info text-white">
                                 <h5 class="card-title roboto-medium">Consectetur adipiscing elit</h5>
                                 <p class="card-text roboto-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -173,10 +173,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-12 col-lg-3 p-3">
+                        <div class="card h-100" style="width: 18rem;">
                             <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body text-bg-info text-white">
                                 <h5 class="card-title roboto-medium">Sed do eiusmod tempor incididunt ut labore</h5>
                                 <p class="card-text roboto-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -187,10 +187,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-12 col-lg-3 p-3">
+                        <div class="card h-100" style="width: 18rem;">
                             <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body text-bg-info text-white">
                                 <h5 class="card-title roboto-medium">Ut enim ad minim veniam</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -216,11 +216,11 @@
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                            placeholder="Nombre y Apellido">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea_1" class="form-label">Asunto</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea_1" rows="3"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
@@ -242,11 +242,17 @@
                         VIAJES CHILE
                     </H3>
                 </div>
-                <div id="#icon0" class="col-6 text-center text-white">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-square-twitter"></i>
-                    <i class="fa-brands fa-square-facebook"></i>
+                <div id="#icon0" class="col-6 text-center link-underline-dark text-white">
+                    <a href="https://github.com/" class="link-light size-1 p-1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/" class="link-light size-1 p-1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/home" class="link-light size-1 p-1" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.facebook.com/" class="link-light size-1 p-1" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+
+
+                    
+                    
+                    
+                    
                 </div>
             </div>
         </div>
